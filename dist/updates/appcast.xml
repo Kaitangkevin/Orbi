@@ -1,23 +1,9 @@
-<?xml version="1.0" standalone="yes"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
-    <channel>
-        <title>Orbi</title>
-        <item>
-            <title>1.1.0</title>
-            <pubDate>Mon, 02 Nov 2026 17:58:35 -0800</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Orbi 1.1.0
-
-- 新增应用内检查更新、自动检查及自动下载设置。
-- 更新设置中心，加入搜索、分类导航与权限状态。
-- 重新设计展开面板、音乐卡片、日历日期条及顶部反向圆弧。
-- 新增独立的充电与低电量提示，音乐播放时自动切换。
-- 修复充电提示音 PowerChime 被识别为音乐来源的问题。
-- 设计与创作：PaJii。
-]]></description>
-            <enclosure url="https://kaitangkevin.github.io/Orbi/updates/Orbi-1.1.0.zip" length="4945686" type="application/octet-stream" sparkle:edSignature="Uyl+zbvi4rRrCme7aasNFCXI4zb9u6wySz8zZ+SwuElzKfT7fZdaeAi6iXcUHuslE1GUhRDHG+PSpV408mKrCw=="/>
-        </item>
-    </channel>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Orbi Updates</title>
+    <link>https://kaitangkevin.github.io/Orbi/</link>
+    <description>Orbi software updates. No new release is published yet.</description>
+    <language>zh-cn</language>
+  </channel>
 </rss>
