@@ -7,8 +7,8 @@
   <p><a href="https://kaitangkevin.github.io/Orbi/">Explore the website</a> · <a href="https://kaitangkevin.github.io/Orbi/download/">Download Orbi</a> · <a href="https://kaitangkevin.github.io/Orbi/about/">About</a></p>
 </div>
 
-> **Now available: Orbi 1.2** · November 2, 2026  
-> A larger workspace with curved screen-edge connections, a refreshed music layout, independent battery indicators, a redesigned settings center, and in-app updates.  
+> **Now available: Orbi 1.2** · November 2, 2026<br>
+> A larger workspace with curved screen-edge connections, a refreshed music layout, independent battery indicators, a redesigned settings center, and in-app updates.<br>
 > [Discover the release →](https://kaitangkevin.github.io/Orbi/download/#whats-new) · [Get the latest version →](https://kaitangkevin.github.io/Orbi/download/)
 
 ## Meet Orbi
