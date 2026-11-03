@@ -2,7 +2,7 @@
 from pathlib import Path
 import os, re, shutil
 root = Path(__file__).resolve().parent.parent
-base = os.environ.get('PAGES_BASE_PATH', '/orbi-website').rstrip('/')
+base = os.environ.get('PAGES_BASE_PATH', '/Orbi').rstrip('/')
 if base and (not base.startswith('/') or '..' in base):
     raise ValueError('Invalid Pages base path')
 output = root / '_site'

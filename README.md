@@ -1,147 +1,131 @@
 <div align="center">
-  <img src="dist/assets/orbi-icon.png" width="112" alt="Orbi app icon">
-  <h1>Orbi for Mac</h1>
-  <p><strong>Your everyday essentials. Right at the top of your Mac.</strong></p>
-  <p>Music, calendar, and clipboard in one lightweight notch workspace.</p>
-  <p>
-    <a href="https://kaitangkevin.github.io/orbi-website/">Explore the Website</a> ·
-    <a href="https://kaitangkevin.github.io/orbi-website/download/">Download & Setup</a> ·
-    <a href="#about-the-developer">Meet the Developer</a>
-  </p>
-  <p><strong>macOS · Version 1.0 · Independently Developed</strong></p>
+  <img src="dist/assets/orbi-icon.png" width="100" height="100" alt="Orbi">
+  <h1>Orbi 1.2</h1>
+  <p>音乐、日程、剪贴板。轻轻移入，在 Mac 顶部展开你的日常。</p>
+  <p>A native notch workspace for your Mac. Designed & created by <strong>PaJii</strong>.</p>
+  <p><a href="https://kaitangkevin.github.io/Orbi/">访问官网 / Website</a> · <a href="https://kaitangkevin.github.io/Orbi/download/">下载 Orbi 1.2 / Download</a> · <a href="https://kaitangkevin.github.io/Orbi/download/#whats-new">完整更新内容 / What’s New</a></p>
 </div>
 
----
+## 下载与系统要求
 
-## Meet Orbi
+**请从 [Orbi 官网下载页面](https://kaitangkevin.github.io/Orbi/download/) 获取当前版本。**
 
-Skip a song. Check what’s next. Find the text you just copied. Orbi brings these everyday actions together at the top of your Mac, so you can spend less time switching windows and more time on what matters.
+| 项目 | 当前版本 |
+|---|---|
+| 版本 | **1.2**（Build 3） |
+| 发布日期 | 2026 年 11 月 2 日 |
+| 系统 | **macOS 26.6 或更新版本** |
+| 架构 | Apple silicon 与 Intel 通用版本 |
+| 安装方式 | 打开 DMG，将 Orbi 拖入 Applications |
+| 语言 | 简体中文、English、跟随系统 |
+| 创作者 | **PaJii** |
 
-Move your pointer into the notch area to open your workspace. Move away, and it returns to a compact view. It’s a small addition to your desktop, designed around the things you do throughout the day.
+当前版本独立分发，未使用 Apple Developer ID 签名或 Apple 公证。首次打开说明、系统要求和文件校验值均在 [官网安装指南](https://kaitangkevin.github.io/Orbi/download/#install) 中提供。
 
-**This repository contains the Orbi website, presentation assets, and installer—not the native macOS application’s source code.** Public visibility does not grant an open-source license. See [Copyright & Usage](#copyright--usage).
+## 1.2 本次更新
 
-## What Orbi Can Do
+### 全新展开界面
 
-| Feature | Capabilities | What to know |
-| --- | --- | --- |
-| **Notch workspace** | Hover to expand; move away to collapse after a short delay | Lives at the top of the screen, with a menu bar entry |
-| **Apple Music controls** | Track and artist details, play/pause, previous and next track | Requires automation access to the Music app |
-| **Audio activity** | App name, playback activity, and a responsive waveform for other audio sources | Universal track details and playback controls are not claimed |
-| **Today’s calendar** | Current or upcoming event, start time, and calendar name | Requires calendar access |
-| **Text clipboard** | Up to 15 recent text entries, click to copy again, and clear history | Text history; not a file or image clipboard |
-| **Personalization** | Choose visible modules and launch at login | Hiding a module does not revoke permissions or stop monitoring |
-| **Language options** | English, Simplified Chinese, or your system language | The website also supports English and Chinese |
+- 展开面板调整为 **1040 × 180**，重新分配音乐、日历和剪贴板的空间。
+- 顶部两侧加入与屏幕边缘衔接的**反向圆弧**，底部圆角加大。
+- 放大文字、图标、封面和播放控件，让内容更充实、更易读。
+- 删除展开面板里的 Music、Calendar、Clipboard 重复标题。
 
-## Take a Closer Look
+### 音乐与音频
 
-Captured at a **1440 × 1000 desktop viewport**. These screenshots show the website’s interactive product demonstrations with sample content, not native app captures. Try the demos on the [website](https://kaitangkevin.github.io/orbi-website/).
+- 音乐卡片改成**左侧大封面，右侧歌曲名、歌手，下方三个播放按钮与细进度条**。
+- Apple Music 打开就显示卡片；暂停或没有声音时保留歌曲信息，未选择歌曲时显示占位内容。
+- 将播放活动与波形音量分开判断，静音片段不再只因音量为零就收起。
+- 音频与电量的收起提示统一为 **276** 的宽度，左右各延伸 **48**。
+- 从源头排除 **PowerChime**，避免将插电提示音识别成音乐。
+- Apple Music 提供明确的播放状态；其他播放器通过系统输出活动判断，暂停识别仍取决于播放器行为。
 
-### One workspace, within reach
+### 充电与低电量
 
-Music, your next event, and recently copied text appear together in an expandable panel.
+- 连接电源时，独立显示电源图标和电量百分比。
+- 电量低于 **20%** 时持续显示橙色提醒。
+- 音乐开始播放后替换电量提示；播放停止后，若仍需显示电量，则自动切回。
+- 充电和低电量提醒都可在设置中单独开关。
 
-![Orbi desktop website showing the expanded music, calendar, and clipboard workspace](docs/screenshots/workspace.jpg)
+### 日历与剪贴板
 
-### Keep good ideas moving
+- 日历改为**月份＋七天日期条＋日程列表**，突出今天，显示全天和后续日程。
+- 日历未授权时提供说明和设置入口。
+- 剪贴板的文字和行高放大，保留最近 **15** 条文本，支持重新复制和清空。
+- 剪贴板历史只存于运行内存，退出 Orbi 后清除。
 
-Find recent text without retracing your steps. Select a clipboard entry to bring it back into your workflow.
+### 设置中心与授权
 
-![Desktop demonstration of Orbi text clipboard history](docs/screenshots/clipboard.jpg)
+- 全新设置布局：搜索、彩色分类图标、蓝色选中状态、返回／前进和可隐藏的侧边栏。
+- 工作区、音乐、日历、剪贴板、电池、权限、软件更新各有对应页面。
+- 查看系统音频、Apple Music 自动化、日历、剪贴板和登录启动的访问状态。
+- 提供请求授权、打开系统设置、刷新状态和验证音频的入口。
+- 系统音频通过实际采集验证“待验证／已验证可用”，不会把静音误报为未授权。
+- 增加偏好设置重置、剪贴板清空确认和操作失败提示。
 
-### Make room for what you need
+### 应用内更新与其他
 
-Choose which modules appear in your workspace. Keep the essentials visible and the rest out of the way.
+- 菜单栏与设置中加入**检查更新**，支持可选的自动检查与自动下载。
+- 更新包使用 Sparkle Ed25519 签名校验，支持应用内下载、安装和重新启动。
+- 更新源与官网下载使用相同的正式版本包，版本与构建号一致。
+- 改善 Xcode 预览的启动行为，预览时不启动后台采集。
+- 设计与创作、版权署名统一为 **PaJii**。
 
-![Desktop demonstration of Orbi module customization](docs/screenshots/modules.jpg)
+[在官网查看完整更新与安装说明 →](https://kaitangkevin.github.io/Orbi/download/#whats-new)
 
-## Download & Install
+## 官网也已更新
 
-**[Download Orbi 1.0 for Mac](https://kaitangkevin.github.io/orbi-website/downloads/Orbi-1.0.dmg)** · DMG · Approximately 3.4 MB
+- 首页交互已按 Orbi 1.2 重做：反向圆弧、三栏展开、大封面、日期条与剪贴板。
+- 可切换待机、音乐、充电和低电量状态；体验示例切歌、暂停、进度和清空。
+- 增加设置交互预览，模块开关可影响网页中的演示。
+- 产品介绍、下载页、安装指南、权限说明、FAQ 和关于页面均同步新版功能。
+- 支持中英文与手机端布局，保留 DailyLaunch、MacNative 徽章。
+- 网页交互使用示例数据，不会读取访客的音乐、日历或剪贴板。
 
-1. Download and open **Orbi-1.0.dmg**.
-2. Drag **Orbi** into **Applications** and wait for the copy to finish.
-3. Open Orbi from Applications, then move your pointer to the top center of your screen.
-4. Review the permission requests and choose your preferred modules and language in Settings.
+[体验新版首页 →](https://kaitangkevin.github.io/Orbi/)
 
-![Orbi installation guide: open the DMG, drag Orbi into Applications, and launch the app](dist/assets/orbi-install-guide.png)
+## 已有用户如何升级
 
-*Installation illustration provided by the developer. The image’s “Orbi.dmg” refers to the “Orbi-1.0.dmg” download linked above.*
+1. 退出旧版 Orbi。
+2. 从 [官网](https://kaitangkevin.github.io/Orbi/download/) 下载 1.2，把新版拖入 Applications 并替换旧应用。
+3. 重新打开 Orbi，在设置中检查模块和权限。
+4. 原先没有更新器的版本需要手动替换这一次；安装带更新器的版本后，可从“设置 → 软件更新”获取后续更新。
 
-### Before your first launch
+## 仓库范围
 
-The current installer **does not have an Apple Developer ID signing certificate**. macOS may be unable to verify the developer or check the app for malicious software. Only proceed if you trust the source, know the file has not been altered, and accept the risks of unsigned software.
+**Orbi 原生应用源码不公开。** 此仓库仅用于：
 
-Read the [first-launch guide](https://kaitangkevin.github.io/orbi-website/download/#install) and [Apple’s official guidance](https://support.apple.com/en-us/102445). Do not disable system-wide security protections.
+- 官网 HTML、CSS、JavaScript 与公共图片资源；
+- 使用说明、版本更新记录及下载校验信息；
+- 官网提供的 DMG 二进制安装包；
+- 应用内更新清单及 GitHub Pages 部署配置。
 
-Minimum macOS version and chip compatibility have not been formally confirmed. Do not assume support for every Mac.
+应用的 Swift 源码、Xcode 工程、私钥、证书和开发数据不提交到这里。公开静态托管中的安装文件仍可通过文件地址访问；README 和面向用户的下载入口统一引导至官网，不创建 GitHub Releases 下载入口。
 
-## Permissions & Data Access
+## 网站开发与部署
 
-| Access | Purpose |
-| --- | --- |
-| **Calendar** | Reads and displays your schedule. The current app requests full calendar access. |
-| **Automation: Music** | Reads current Apple Music information and sends playback commands. |
-| **System audio** | Detects audio activity to drive the waveform; review any macOS authorization prompts. |
-| **Clipboard** | Monitors newly copied text while Orbi is running and keeps up to 15 entries. |
+```sh
+PAGES_BASE_PATH= python3 scripts/build-pages.py
+python3 -m http.server 8000 --directory _site
+```
 
-**Module visibility is separate from data access.** Hiding the clipboard module does not stop monitoring in the current version. Quit Orbi to stop it. Manage applicable system permissions in macOS Settings.
+默认部署路径为 `/Orbi`。GitHub Actions 从 Pages 配置获取实际路径，并将 `dist/` 导出到 `_site/` 后部署。
 
-The website demos use sample data and do not access your music, calendar, or clipboard. The installed app and website demos are separate environments.
+| 路径 | 用途 |
+|---|---|
+| `dist/index.html` | 首页入口与原始静态徽章 |
+| `dist/app.js` | 导航、语言、页面入口与页脚 |
+| `dist/product.js` | 新版首页与交互演示 |
+| `dist/pages.js` | 下载、更新记录、安装、权限、FAQ 与关于 |
+| `dist/release.js` | 当前版本、构建号、文件大小与 SHA-256 |
+| `dist/downloads/` | 官网安装包与校验文件 |
+| `dist/updates/appcast.xml` | Sparkle 更新清单 |
+| `.github/workflows/` | GitHub Pages 自动部署 |
 
-## About the Developer
+## 反馈与版权
 
-I’m **[Kaitangkevin](https://github.com/Kaitangkevin)**, the independent developer behind Orbi.
+使用前请阅读 [官网说明](https://kaitangkevin.github.io/Orbi/download/#faq)。反馈中请避免公开私人日历内容、剪贴板文字或其他个人资料。
 
-Orbi is my personal product project. I’m building it around a simple idea: the small actions you repeat every day should feel easier, clearer, and less distracting. A useful tool should be there when you need it and give you space when you don’t.
+**© 2026 PaJii · Orbi. 保留所有权利。**
 
-My focus is on refining the everyday experience: thoughtful interactions, practical features, and a workspace that fits naturally into the way people use their Macs. I’m continuing to improve Orbi and welcome specific, constructive feedback from people using it.
-
-**Orbi is an independent project. It is not an official Apple product and is not endorsed by Apple.**
-
-## Feedback & Contact
-
-Have a bug report, feature request, or website issue? [Open an issue](https://github.com/Kaitangkevin/orbi-website/issues) with:
-
-- Your macOS version and Orbi version.
-- Steps to reproduce the issue.
-- What you expected and what actually happened.
-- A screenshot, if helpful, with private information removed.
-
-Please do not post passwords, access tokens, personal calendar details, or private clipboard contents in public issues. For collaboration or content-use requests, start with my [GitHub profile](https://github.com/Kaitangkevin).
-
-## Copyright & Usage
-
-**Copyright © 2026 Kaitangkevin. All rights reserved.**
-
-This project is not released under MIT, Apache, GPL, or another open-source license. Except where permitted by applicable law, GitHub’s platform terms, or express authorization:
-
-- **No plagiarism or misrepresentation.** Do not present protected code, original copy, images, or design assets as your own, or remove attribution and republish them.
-- **No unauthorized copying or redistribution.** Do not reproduce, adapt, repackage, redistribute, or commercially exploit protected project content without permission.
-- **No misleading use of branding.** Do not use Orbi’s name, icon, or visual assets in a way that implies an affiliation, endorsement, or authorization that does not exist.
-- **Public access is not an additional license.** Viewing this repository or using GitHub’s platform features does not grant commercial-use, redistribution, or adaptation rights. Attribution alone does not grant permission.
-
-Sharing **official project links** is welcome. Contact the developer and obtain express written permission before reusing protected content or assets.
-
-These notices apply only to rights held by the relevant rights holder. They do not claim exclusive rights over general functionality, abstract ideas, or third-party assets. Third-party components, trademarks, and materials remain subject to their respective owners’ rights and licenses.
-
----
-
-<details>
-<summary><strong>Repository guide</strong></summary>
-
-| Path | Purpose |
-| --- | --- |
-| `dist/product.js` | Product presentation and interactive demos |
-| `dist/pages.js` | Download guide and about page |
-| `dist/app.js` | Navigation and language preference |
-| `dist/style.css` | Styling and responsive layouts |
-| `dist/assets/` | Website images |
-| `dist/downloads/` | Installer |
-| `docs/screenshots/` | README screenshots |
-| `.github/workflows/pages.yml` | GitHub Pages deployment |
-| `scripts/build-pages.py` | Deployment base-path preparation |
-
-Authorized maintenance: preview with `python3 -m http.server 4173 --directory dist`. Pushing to `main` deploys the website through GitHub Actions. The generated `_site/` directory is published; repository documentation is not included in that output.
-
-</details>
+Orbi 是独立应用，与 Apple 无隶属关系。Apple、Mac、macOS 和 Apple Music 名称用于说明平台与集成功能。

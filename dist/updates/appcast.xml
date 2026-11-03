@@ -1,9 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <title>Orbi Updates</title>
     <link>https://kaitangkevin.github.io/Orbi/</link>
-    <description>Orbi software updates. No new release is published yet.</description>
+    <description>Orbi software updates</description>
     <language>zh-cn</language>
+    <item>
+      <title>Orbi 1.2</title>
+      <pubDate>Tue, 03 Nov 2026 02:34:05 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.6</sparkle:minimumSystemVersion>
+      <description sparkle:format="markdown"># Orbi 1.2
+
+- 全新 1040 × 180 展开面板，加入顶部反向圆弧与更清晰的三栏布局。
+- 大封面、歌曲与歌手、播放按钮和进度条；Apple Music 打开时就保留音乐卡片。
+- 月份、七天日期条、全天与后续日程的新日历布局。
+- 独立的充电与低于 20% 的电量提示，音乐播放时自动替换，延伸宽度一致。
+- 排除 PowerChime；音频播放活动与波形音量分离，减少静音时的收起。
+- 设置中心新增搜索、分类、权限状态和对应操作入口。
+- 应用内检查更新、可选自动检查／下载、签名验证、安装与重新启动。
+- 放大剪贴板文本与控件，保留最近 15 条文本。
+- 设计与创作、版权署名：PaJii。
+
+系统要求：macOS 26.6 或更新版本，Apple silicon / Intel。
+</description>
+      <enclosure url="https://kaitangkevin.github.io/Orbi/downloads/Orbi-1.2.dmg" length="5332517" type="application/octet-stream" sparkle:edSignature="NlYYKUY8J4yENENIT+pgKkH7JcvfdWvZiVH4KitkiHHyHleszpPa6ZfPzHH4qD8MIjqbblUmOUTA1Ia0OTdACA==" />
+    </item>
   </channel>
 </rss>

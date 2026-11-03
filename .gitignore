@@ -2,3 +2,17 @@
 .DS_Store
 
 _site/
+
+# Native application source and signing material stay private.
+*.swift
+*.xcodeproj/
+*.xcworkspace/
+*.entitlements
+*.app/
+*.xcarchive/
+*.dSYM/
+DerivedData/
+*.p12
+*.p8
+*.key
+*.pem
